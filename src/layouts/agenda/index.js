@@ -26,6 +26,7 @@ import MDBox from "components/MDBox";
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Footer from "examples/Footer";
+import Pesquisa from "layouts/pesquisa/barra";
 // import DataTable from "examples/Tables/DataTable";
 import ComplexStatisticsCard from "examples/Cards/StatisticsCards - Copia/ComplexStatisticsCard";
 import MDTypography from "components/MDTypography";
@@ -35,7 +36,7 @@ import "./index.css";
 // import authorsTableData from "layouts/tables/data/authorsTableData";
 // import projectsTableData from "layouts/tables/data/projectsTableData";
 
-function Agenda() {
+function Tables() {
   return (
     <DashboardLayout>
       <DashboardNavbar />
@@ -44,8 +45,11 @@ function Agenda() {
           <Grid item xs={12}>
             {/* parte feita pelo francisco */}
             <div>
+              <Pesquisa />
+            </div>
+            <div>
               <MDTypography variant="button" fontWeight="light" color="text">
-                <h1 className="espaco">Santerém Unidade Tapajós Rua Vera Paz, s/n Bairro Salé</h1>
+                <h1 className="espaco">Santarém Unidade Tapajós Rua Vera Paz, s/n Bairro Salé</h1>
               </MDTypography>
             </div>
             <Card>
@@ -722,4 +726,4 @@ function Agenda() {
   );
 }
 
-export default Agenda;
+export default Tables;

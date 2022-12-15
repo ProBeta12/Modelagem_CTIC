@@ -48,11 +48,10 @@ const MDButton = forwardRef(
 MDButton.defaultProps = {
   size: "medium",
   variant: "contained",
-  color: "white",
+  color: "secondary",
   circular: false,
   iconOnly: false,
 };
-
 // Typechecking props for the MDButton
 MDButton.propTypes = {
   size: PropTypes.oneOf(["small", "medium", "large"]),
